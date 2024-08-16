@@ -1,0 +1,186 @@
+/* Styling for the navigation bar */
+nav {
+  background-color: darkslategray;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Styling for navigation links on hover */
+nav a:hover {
+  color: orange;
+}
+
+/* Styling for horizontal rule */
+nav hr {
+  margin: 10px auto;
+  width: 80%;
+  border: 0;
+  border-top: 2px solid white;
+}
+
+
+/* Styling for header image container */
+.header-img {
+  background-image: url("book.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Styling for the overlay text */
+.header-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 40%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show text on hover */
+.header-img:hover .header-txt {
+  opacity: 1;
+}
+
+/* Profile section styling */
+.me {
+  text-align: center;
+}
+
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 90%;
+}
+
+.desp {
+  color: #39796b;
+  margin: 10px 0;
+  font-size: 18px;
+
+
+}
+
+.line {
+  border: none;
+  border-top: 2px solid black;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Project section styling */
+.head {
+  color: cadetblue;
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.game,
+.menu,
+.uno {
+  border-radius: 10px;
+  margin-right: 20px;
+  padding-left: 100px;
+  height: 350px;
+}
+
+.game {
+  max-width: 400px;
+}
+
+.menu,
+.uno {
+  width: 1000px;
+  height: 300px;
+}
+
+/* Project description styling */
+.game-des,
+.uno-des,
+.menu-des {
+  font-size: 18px;
+  color: #555555;
+  text-align: justify;
+
+}
+
+.work1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.work2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.work3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Container for images in the gallery */
+.contain {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the gallery heading */
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Grid layout for image gallery */
+.iamges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+/* Styling for individual image boxes */
+.box {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px black;
+  max-width: 200px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
